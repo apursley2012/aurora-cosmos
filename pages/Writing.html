@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Writing | aurora-cosmos</title>
+    <script type="module" crossorigin src="../assets/main.js"></script>
+    <link rel="modulepreload" crossorigin href="./useScreenInit.js">
+    <link rel="modulepreload" crossorigin href="../assets/proxy.js">
+    <link rel="modulepreload" crossorigin href="./components/Navigation.js">
+    <link rel="modulepreload" crossorigin href="./components/AuroraBackground.js">
+    <link rel="modulepreload" crossorigin href="./components/Starfield.js">
+    <link rel="stylesheet" crossorigin href="../assets/main.css">
+    <script>
+  window.__STATIC_PAGE_ROUTE__ = "/writing";
+
+  (function () {
+    if (!window.location.hash || window.location.hash === "#") {
+      window.location.replace(
+        window.location.pathname +
+        window.location.search +
+        "#/writing"
+      );
+    }
+  })();
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
